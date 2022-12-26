@@ -1,0 +1,41 @@
+comandos git:
+Obs.: Onde houver aspas simples, é pq são apenas para destacar algo. Aspas duplas significam que elas devem estar escritas no código.
+- Para iniciar uma pasta como repositorio:
+	Instalar o Git no computador
+	Clicar com o direito > Git Bash Here
+	Irá abrir a tela para digitar comandos
+	Digitar o comando 'git init' para iniciar o git na pasta atual
+	Um arquivo oculto será criado na pasta, caso dê certo
+
+- Para saber o status dos arquivos da pasta atual, digitar git status
+	O texto 'No commits yet' significa que ainda não há nenhum controle de versão no momento
+	Em "Untracked Files:" ele irá dizer qual arquivo ainda não foi adicionado no controle de versões
+
+- Para adicionar um novo arquivo, usar o comando git add "nome do arquivo.formato" (nome do arquivo entre aspas duplas)
+
+- Caso seja necessário acrescentar todos os arquivos da pasta de uma só vez, usar 'git add .' (sem aspas)
+
+- Agora, para criar a primeira versão deles:
+	Para isso, usa-se o comando 'git commit -m "mensagem para identificar aquela versão"'
+	Como boa prática, costuma-se chamar a primeira versão de commit inicial
+	Ao usar este comando pela primeira vez, ele irá avisar que não há e-mail/conta configurada para salvar aquela versão
+	A propria tela com o erro irá mostrar os comandos que precisam ser usados
+	git config --global user.email "andreafonso.aj@gmail.com
+	git config --global user.name "Andre Anastacio"
+	Após usar estes dois comandos, dessa vez sim poderá usar 'git commit -m "mensagem para identificar aquela versão"'
+
+- Em seguida, pode-se usar o comando git push para enviar os arquivos para a nuvem
+	Primeiro, é necessário definir o link do projeto na nuvem
+	Para isso, ir até a página do github na web
+	Lado superior direito da tela, clicar no + e depois em New Repository
+	Colocar nome e sempre marcar "Add a README file
+	Clicar em Create Repository
+
+- Com o link do repositorio criado:
+	Voltar para o console do git
+	usar o comando git remote add origin 'link do repositorio criado'
+	em caso de link incorreto, usar o comando git remote set-url origin 'link correto'
+	Uma janela será aberta para fazer o login no github. Logar e autorizar
+	Caso tudo dê certo, o Master Branch vai ser criado e aparecer na pagina do projeto no Git Hub
+
+- teste versão
