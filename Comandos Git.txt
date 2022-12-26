@@ -49,3 +49,22 @@ Obs.: Onde houver aspas simples, é pq são apenas para destacar algo. Aspas dup
 	O console irá mostrar várias linhas, cada uma delas representando uma das versões juntamente com sua respectiva ID (número)
 	exibido no começo da linha)
 
+- Para transtar entre diferentes versões
+	Observar qual a ID da versão desejada usando o comando git reflog
+	Usar o comando git reset --hard 'id da versão desejada'
+
+- Muitas vezes, poderá ser necessário criar Branchs diferentes, mantendo uma "master" como principal e outras versões onde 
+novas funcionalidades serão testadas
+
+- Para identificar as Branches atuais, usar o comando git branch
+	A Branch marcada de verde e com um asterisco, é a Branch onde estivermos trabalhando no momento
+
+- Para criar uma nova Branch:
+	Usar o comando git branch 'nome para identificar a nova versão'
+	Costuma-se chamar essa versão onde coisas novas serão testadas de "staging"
+
+- Para transitar entre as Branches existentes
+	git checkout 'nome da branch'
+
+
+
