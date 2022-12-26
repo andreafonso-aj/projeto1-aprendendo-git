@@ -38,4 +38,14 @@ Obs.: Onde houver aspas simples, é pq são apenas para destacar algo. Aspas dup
 	Uma janela será aberta para fazer o login no github. Logar e autorizar
 	Caso tudo dê certo, o Master Branch vai ser criado e aparecer na pagina do projeto no Git Hub
 
-- teste versão
+- A partir de agora, a primeira versão dos arquivos foram criados
+
+- Para criar uma nova versão:
+	Usar o comando 'git status' para ver os novos arquivos
+	Usar 'git add .' ou 'git add nome do arquivo' para adicionar os novos arquivos
+	Criar uma nova versão usando git commit -m "nome para descrever nova versão"
+
+- Para identificar um historico de versões, usar o comando git reflog
+	O console irá mostrar várias linhas, cada uma delas representando uma das versões juntamente com sua respectiva ID (número)
+	exibido no começo da linha)
+
