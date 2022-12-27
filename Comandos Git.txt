@@ -33,7 +33,7 @@ Obs.: Onde houver aspas simples, é pq são apenas para destacar algo. Aspas dup
 
 - Com o link do repositorio criado:
 	Voltar para o console do git
-	usar o comando git remote add origin 'link do repositorio criado'
+	usar o comando git remote add origin 'link do repositorio criado' (sempre clicar com o direito e colar, não dá ctrl+v)
 	em caso de link incorreto, usar o comando git remote set-url origin 'link correto'
 	Uma janela será aberta para fazer o login no github. Logar e autorizar
 	Caso tudo dê certo, o Master Branch vai ser criado e aparecer na pagina do projeto no Git Hub
@@ -49,7 +49,7 @@ Obs.: Onde houver aspas simples, é pq são apenas para destacar algo. Aspas dup
 	O console irá mostrar várias linhas, cada uma delas representando uma das versões juntamente com sua respectiva ID (número)
 	exibido no começo da linha)
 
-- Para transtar entre diferentes versões
+- Para transitar entre diferentes versões
 	Observar qual a ID da versão desejada usando o comando git reflog
 	Usar o comando git reset --hard 'id da versão desejada'
 
@@ -65,6 +65,13 @@ novas funcionalidades serão testadas
 
 - Para transitar entre as Branches existentes
 	git checkout 'nome da branch'
+	A partir daqui, todas as alterações feitas estarão nesta nova Branch
+	Para prosseguir com o upload da nova versão:
+	usar git add nos arquivos modificados
+	usar git commit -m "descrição da versão" para criar a nova versão
+	usar git push para fazer o upload
+	caso seja a primeira vez nessa branch, usar o comando mostrado na tela para resolver o erro
+	a Branch será criada e aparecerá na página do projeto no github
 
 
 
