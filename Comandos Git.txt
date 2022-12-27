@@ -63,6 +63,9 @@ novas funcionalidades serão testadas
 	Usar o comando git branch 'nome para identificar a nova versão'
 	Costuma-se chamar essa versão onde coisas novas serão testadas de "staging"
 
+- Para criar uma nova Branch e já trocar pra ela:
+	usar o comando git checkout -b 'nome da branch' 'nome da branch base para a copia'
+
 - Para transitar entre as Branches existentes
 	git checkout 'nome da branch'
 	A partir daqui, todas as alterações feitas estarão nesta nova Branch
@@ -72,6 +75,27 @@ novas funcionalidades serão testadas
 	usar git push para fazer o upload
 	caso seja a primeira vez nessa branch, usar o comando mostrado na tela para resolver o erro
 	a Branch será criada e aparecerá na página do projeto no github
+
+
+- Ao utilizar Branches diferentes, é possível usar "merge" para unir as duas versões
+	Passo 1 é estar na Branch que deverá ser a principal. No caso deste exemplo, voltamos para a Master
+	usar o comando git merge staging (pegar as atualizações da staging e fundir com a Master)
+	
+- É importante antes de fazer o Merge, certificar de estar nas versões mais recentes do arquivo para evitar desencontros e erros
+	Ao retornar para a Branch Principal (Master) usar o comando git pull
+
+- Resumindo, o fluxo de Branches é:
+	git pull da branch principal
+	gerar uma nova branch a partir da branch principal
+	trabalhar e adicionar novas funcionalidades na nova branch
+	finalizar o trabalho na nova branch
+	git checkout para voltar para a branch principal
+	git pull para certificar de que está na versão mais recente dos arquivos
+	mergiar (unir) o código da branch nova na branch principal (depois de testar)
+	git push da branch principal
+
+- Existe um processo chamado "pull request", que é quando um programador vai validar o código que foi feito na branch
+secundária antes de permitir o Merge, para evitar erros
 
 
 
